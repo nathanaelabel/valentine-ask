@@ -21,7 +21,8 @@ body {
 
 #question {
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
-    font-size: 52px; /* Set font size for the question */
+    font-size: 48px; /* Set font size for the question */
+    margin: 12px;
 }
 
 #options {
@@ -29,12 +30,42 @@ body {
 }
 
 button {
-    padding: 10px 20px; /* Set padding for buttons */
-    margin: 0 10px; /* Set margin around buttons */
-    font-size: 26px; /* Set font size for buttons */
-    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
-    background-color: #ff879f; /* Set button background color */
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 26px;
+    font-family: 'Roboto', cursive;
+    background-color: #ff96ab; /* Set button background color */
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
+    transition: transform 0.2s ease; /* Smooth transition for button movement */
+}
+
+#loading {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#message {
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #ff96ab;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #question {
+        font-size: 36px; /* Smaller font size for mobile */
+    }
+
+    button {
+        font-size: 20px; /* Smaller button font size for mobile */
+        margin: 0 10px; /* Less margin for smaller screens */
+    }
+
+    #message {
+        font-size: 28px; /* Smaller message font size for mobile */
+    }
 }
