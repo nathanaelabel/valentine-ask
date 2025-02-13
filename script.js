@@ -1,21 +1,32 @@
 // script.js
 
-// Handle button click events
+// Array of messages for the "No" button
+const noButtonMessages = [
+    "You sure?",
+    "Why are you clicking this?",
+    "I'm gonna cri...",
+    "Please say yes!",
+    "Don't break my heart 💔"
+];
+
+let messageIndex = 0;
+
+// Function to handle button click events
 function selectOption(option) {
     if (option === 'yes') {
         showLoading();
         // Hide the question text
         document.getElementById('question').style.display = 'none';
-        // Display cat-heart.gif, trigger confetti, and show message after a short delay
         setTimeout(function() {
             displayCatHeart();
             triggerConfetti();
             showMessage();
         }, 1000);
     } else if (option === 'no') {
-        // Make the "No" button play hard to get
+        // Get the "No" button
         var noButton = document.getElementById('no-button');
-        noButton.innerText = 'You sure?';
+        // Update the button text with the next message in the cycle
+        noButton.innerText = noButtonMessages[messageIndex];
         // Move the "No" button to a random position
         noButton.style.position = 'absolute';
         noButton.style.left = Math.random() * (window.innerWidth - 100) + 'px';
@@ -25,6 +36,8 @@ function selectOption(option) {
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 1.2;
         yesButton.style.fontSize = newSize + 'px';
+        // Update the message index for the next click
+        messageIndex = (messageIndex + 1) % noButtonMessages.length;
     }
 }
 
@@ -68,8 +81,17 @@ function triggerConfetti() {
 function showMessage() {
     var message = document.createElement('div');
     message.id = 'message';
-    message.innerText = 'Yay! I can\'t wait to spend Valentine\'s Day with you! ❤️';
+    message.innerHTML = 'Yaaay, you\'re my Valentine!<br>Thank you for being with me and for everything in our relationship.<br>I hope we continue to grow stronger and happier together~ 🥰💝';
     document.getElementById('image-container').appendChild(message);
+
+    var madeByMessage = document.createElement('div');
+    madeByMessage.id = 'made-by';
+    madeByMessage.innerHTML = 'Made with ❤️ by Abel';
+    document.body.appendChild(madeByMessage);
+
+    setTimeout(function() {
+        madeByMessage.classList.add('show');
+    }, 500);
 }
 
 // Display the dancing cat initially
