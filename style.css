@@ -38,20 +38,47 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
-    transition: transform 0.2s ease; /* Smooth transition for button movement */
+    border-radius: 10px; /* Add rounded corners */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #ff6b8b; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 #loading {
-    display: none; /* Hide by default */
-    font-size: 24px;
+    font-family: 'Roboto', cursive;
+    color: #ff6b8b;
+    font-size: 20px;
     margin-top: 20px;
 }
 
 #message {
-    font-family: 'Sacramento', cursive;
-    font-size: 36px;
+    font-family: 'Atkinson Hyperlegible Next', cursive;
+    font-size: 24px;
     margin-top: 20px;
-    color: #ff96ab;
+    color: #fa5f81;
+    text-align: center;
+    line-height: 2.0;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#made-by {
+    position: fixed; /* Fix the position to the viewport */
+    bottom: 20px; /* Position at the bottom */
+    right: 20px; /* Position at the right */
+    font-family: 'Roboto', cursive;
+    font-size: 14px;
+    color: #fa5f81;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#made-by.show {
+    opacity: 1; /* Make it visible */
 }
 
 /* Responsive Design */
@@ -66,6 +93,10 @@ button {
     }
 
     #message {
-        font-size: 28px; /* Smaller message font size for mobile */
+        font-size: 18px; /* Smaller message font size for mobile */
+    }
+    
+    #made-by {
+        font-size: 11px; /* Smaller message font size for mobile */
     }
 }
