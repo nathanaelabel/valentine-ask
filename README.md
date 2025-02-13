@@ -1,6 +1,6 @@
 # Valentine Ask
 
-Just making website for fun to ask my girlfriend to be my Valentine! 💕
+Just making a website for fun to ask my girlfriend to be my Valentine! 💕
 
 👉 **Live Demo:** [https://nathanaelabel.github.io/Valentine-Ask](https://nathanaelabel.github.io/Valentine-Ask)
 
