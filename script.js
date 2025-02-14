@@ -56,9 +56,7 @@ function displayCatHeart() {
     var imageContainer = document.getElementById('image-container');
     // Create a new Image element for the cat-heart
     var catHeartImage = new Image();
-    // Set the source (file path) for the cat-heart image
     catHeartImage.src = 'cat-heart.gif';
-    // Set alternative text for the image (for accessibility)
     catHeartImage.alt = 'Cat Heart';
     // When the cat-heart image is fully loaded, add it to the image container
     catHeartImage.onload = function() {
