@@ -81,15 +81,6 @@ function showMessage() {
     message.id = 'message';
     message.innerHTML = 'Yaaay, you\'re my Valentine!<br>Thank you for being with me and for everything in our relationship.<br>I hope we continue to grow stronger and happier together~ 🥰💝';
     document.getElementById('image-container').appendChild(message);
-
-    var madeByMessage = document.createElement('div');
-    madeByMessage.id = 'made-by';
-    madeByMessage.innerHTML = 'Made with ❤️ by Abel';
-    document.body.appendChild(madeByMessage);
-
-    setTimeout(function() {
-        madeByMessage.classList.add('show');
-    }, 500);
 }
 
 // Display the dancing cat initially
