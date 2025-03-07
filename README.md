@@ -1,8 +1,8 @@
-# Valentine Ask
+# Valentine Ask 
 
-Just making a website for fun to ask my girlfriend to be my Valentine! 💕
+Fun website to ask your crush or partner if they want to be your Valentine or not (definitely yes). 
 
-👉 **Live Demo:** [https://nathanaelabel.github.io/Valentine-Ask](https://nathanaelabel.github.io/Valentine-Ask)
+👉 **Live Demo:** [https://nathanaelabel.github.io/valentine-ask](https://nathanaelabel.github.io/valentine-ask)
 
 ---
 
@@ -17,13 +17,13 @@ This is a little project I made to ask my girlfriend to be my Valentine in a fun
 
 ## How to Use
 
-1. Open the link: [https://nathanaelabel.github.io/Valentine-Ask](https://nathanaelabel.github.io/Valentine-Ask).
+1. Open the link: [https://nathanaelabel.github.io/valentine-ask](https://nathanaelabel.github.io/valentine-ask).
 2. Click "Yes" (because you're the best).
 3. Enjoy the confetti, the message, and the cute cat-heart animation.
 4. If you click "No," well... good luck catching the button! 😂
 
 ---
 
-#### Made with ❤️ by Abel
+📌 **Note:** This project was created just for fun and is not actively maintained.
 
 Happy Valentine's Day! 🥰
