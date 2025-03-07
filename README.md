@@ -8,7 +8,7 @@ Fun website to ask your crush or partner if they want to be your Valentine or no
 
 ## What's This?
 
-This is a little project I made to ask my girlfriend to be my Valentine in a fun and memorable way. It's got:
+This is a little project I made to ask someone to be my Valentine in a fun and memorable way. It's got:
 - Cute "Yes" button that shows confetti and a sweet message.
 - Sneaky "No" button that moves around and says funny things.
 - A dancing cat and a cat with a heart because why not? 🐱
